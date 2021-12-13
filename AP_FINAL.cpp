@@ -1,7 +1,5 @@
 // AP_FINAL.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-#define _CRT_SECURE_NO_WARNINGS
-#define _CRT_SECURE_NO_DEPRECATE
 #include <iostream>
 #include <list>
 #include "TravelInfo.h"
@@ -10,16 +8,16 @@
 int mainMenu() {
 	int c;
 	system("cls");
-	printf_s("Please Select Your Desired Action: \n");
-	printf_s("1. Create New Travel List \n");
-	printf_s("2. Display Travel List \n");
-	printf_s("3. Display A single Travel info \n");
-	printf_s("4. Delete Item \n");
-	printf_s("5. Delete Travel List \n");
-	printf_s("6. Update Travel List \n");
-	printf_s("7. Export Travel List \n");
-	printf_s("0. Exit \n");
-	scanf_s("%d", &c);
+	cout << "Please Select Your Desired Action: \n";
+	cout << "1. Create New Travel List \n";
+	cout << "2. Display Travel List \n";
+	cout << "3. Display A single Travel info \n";
+	cout << "4. Delete Item \n";
+	cout << "5. Delete Travel List \n";
+	cout << "6. Update Travel List \n";
+	cout << "7. Export Travel List \n";
+	cout << "0. Exit \n";
+	cin >> c;
 	return c;
 }
 
